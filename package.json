@@ -1,6 +1,6 @@
 {
     "name": "@qualifieddevs/solana-wallet-adapter-mui",
-    "version": "0.13.4",
+    "version": "0.13.5",
     "description": "Solana wallet button components using mui",
     "author": "Qualified Devs",
     "repository": "https://github.com/QualifiedDevs/solana-wallet-adapter-mui",
