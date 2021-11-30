@@ -8,11 +8,12 @@ import {
     IconButton,
     List,
     ListItem,
-    makeStyles,
     Theme,
 } from '@mui/material';
 
-import {CloseIcon, ExpandLess, ExpandMore} from '@mui/icons-material';
+import { makeStyles } from '@mui/styles';
+
+import { Close, ExpandLess, ExpandMore } from '@mui/icons-material';
 import { useWallet } from '@solana/wallet-adapter-react';
 import { WalletName } from '@solana/wallet-adapter-wallets';
 import React, { FC, ReactElement, SyntheticEvent, useCallback, useMemo, useState } from 'react';
@@ -120,7 +121,7 @@ export const WalletDialog: FC<WalletDialogProps> = ({
             <DialogTitle>
                 {title}
                 <IconButton onClick={handleClose}>
-                    <CloseIcon />
+                    <Close />
                 </IconButton>
             </DialogTitle>
             <DialogContent>
