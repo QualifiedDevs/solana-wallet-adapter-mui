@@ -9,7 +9,7 @@ import {
     MenuItem,
     Theme,
 } from '@mui/material';
-import {CopyIcon, DisconnectIcon, SwitchIcon} from '@mui/icons-material'
+import { ContentCopy, LinkOff, CompareArrows } from '@mui/icons-material'
 import { useWallet } from '@solana/wallet-adapter-react';
 import React, { FC, useMemo, useState } from 'react';
 import { useWalletDialog } from './useWalletDialog';
@@ -130,7 +130,7 @@ export const WalletMultiButton: FC<ButtonProps> = ({
                         }}
                     >
                         <ListItemIcon>
-                            <CopyIcon />
+                            <ContentCopy />
                         </ListItemIcon>
                         Copy address
                     </MenuItem>
@@ -141,7 +141,7 @@ export const WalletMultiButton: FC<ButtonProps> = ({
                         }}
                     >
                         <ListItemIcon>
-                            <SwitchIcon />
+                            <CompareArrows />
                         </ListItemIcon>
                         Connect a different wallet
                     </MenuItem>
@@ -155,7 +155,7 @@ export const WalletMultiButton: FC<ButtonProps> = ({
                         }}
                     >
                         <ListItemIcon>
-                            <DisconnectIcon />
+                            <LinkOff />
                         </ListItemIcon>
                         Disconnect
                     </MenuItem>
