@@ -1,4 +1,4 @@
-import { makeStyles, Theme } from '@material-ui/core';
+import { makeStyles, Theme } from '@mui/material';
 import { Wallet } from '@solana/wallet-adapter-wallets';
 import React, { DetailedHTMLProps, FC, ImgHTMLAttributes } from 'react';
 

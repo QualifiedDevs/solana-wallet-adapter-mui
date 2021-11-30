@@ -10,10 +10,9 @@ import {
     ListItem,
     makeStyles,
     Theme,
-} from '@material-ui/core';
-import CloseIcon from '@material-ui/icons/Close';
-import ExpandLess from '@material-ui/icons/ExpandLess';
-import ExpandMore from '@material-ui/icons/ExpandMore';
+} from '@mui/material';
+
+import {CloseIcon, ExpandLess, ExpandMore} from '@mui/icons-material';
 import { useWallet } from '@solana/wallet-adapter-react';
 import { WalletName } from '@solana/wallet-adapter-wallets';
 import React, { FC, ReactElement, SyntheticEvent, useCallback, useMemo, useState } from 'react';

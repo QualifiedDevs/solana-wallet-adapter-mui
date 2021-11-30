@@ -1,16 +1,15 @@
 {
-    "name": "@solana/wallet-adapter-material-ui",
-    "version": "0.13.1",
-    "author": "Solana Maintainers <maintainers@solana.foundation>",
-    "repository": "https://github.com/solana-labs/wallet-adapter",
-    "license": "Apache-2.0",
+    "name": "@qualifieddevs/solana-wallet-adapter-mui",
+    "version": "0.13.2",
+    "description": "Solana wallet button components using mui",
+    "author": "Qualified Devs",
+    "repository": "https://github.com/QualifiedDevs/solana-wallet-adapter-mui",
     "main": "lib/index.js",
     "esnext": "lib/index.js",
     "types": "lib/index.d.ts",
     "files": [
         "lib",
-        "src",
-        "LICENSE"
+        "src"
     ],
     "publishConfig": {
         "access": "public"
@@ -20,8 +19,8 @@
         "build": "yarn clean && tsc"
     },
     "peerDependencies": {
-        "@material-ui/core": "^4.12.1",
-        "@material-ui/icons": "^4.11.2",
+        "@mui/icons-material": "^5.2.0",
+        "@mui/material": "^5.2.2",
         "@solana/wallet-adapter-base": "^0.7.0",
         "@solana/wallet-adapter-react": "^0.13.0",
         "@solana/wallet-adapter-wallets": "^0.11.0",
@@ -30,8 +29,8 @@
         "react-dom": "^17.0.2"
     },
     "devDependencies": {
-        "@material-ui/core": "^4.12.1",
-        "@material-ui/icons": "^4.11.2",
+        "@mui/icons-material": "^5.2.0",
+        "@mui/material": "^5.2.2",
         "@solana/wallet-adapter-base": "^0.7.0",
         "@solana/wallet-adapter-react": "^0.13.0",
         "@solana/wallet-adapter-wallets": "^0.11.0",

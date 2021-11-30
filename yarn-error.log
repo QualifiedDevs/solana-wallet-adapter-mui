@@ -1,0 +1,73 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js publish
+
+PATH: 
+  C:\Users\deckl\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\deckl\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files\AdoptOpenJDK\jdk-8.0.292.10-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\deckl\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Users\deckl\AppData\Local\Programs\Python\Python310\Scripts;C:\Users\deckl\AppData\Local\Programs\Python\Python310;C:\Users\deckl\.local\share\solana\install\active_release\bin;C:\Users\deckl\AppData\Local\Microsoft\WindowsApps;C:\Users\deckl\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\deckl\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;C:\Program Files\Foreman;C:\Users\deckl\.foreman\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\deckl\.local\share\solana\install\active_release\bin;C:\;C:\Program Files\cloudflare\bin;C:\Users\deckl\AppData\Local\Programs\Python\Python310;C:\Users\deckl\AppData\local\Programs\Python\Python310\Lib\site-packages
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  14.17.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/-/user/org.couchdb.user:cryptominnow: failed to authenticate: Could not authenticate cryptominnow: bad password
+      at Request.params.callback [as _callback] (C:\Users\deckl\AppData\Roaming\nvm\v14.17.0\node_modules\yarn\lib\cli.js:67029:18)
+      at Request.self.callback (C:\Users\deckl\AppData\Roaming\nvm\v14.17.0\node_modules\yarn\lib\cli.js:140883:22)
+      at Request.emit (events.js:376:20)
+      at Request.<anonymous> (C:\Users\deckl\AppData\Roaming\nvm\v14.17.0\node_modules\yarn\lib\cli.js:141855:10)
+      at Request.emit (events.js:376:20)
+      at IncomingMessage.<anonymous> (C:\Users\deckl\AppData\Roaming\nvm\v14.17.0\node_modules\yarn\lib\cli.js:141777:12)
+      at Object.onceWrapper (events.js:482:28)
+      at IncomingMessage.emit (events.js:388:22)
+      at endReadableNT (internal/streams/readable.js:1336:12)
+      at processTicksAndRejections (internal/process/task_queues.js:82:21)
+
+npm manifest: 
+  {
+      "name": "solana-wallet-adapter-mui",
+      "version": "0.13.2",
+      "description": "Solana wallet button components using mui",
+      "author": "Qualified Devs",
+      "repository": "https://github.com/QualifiedDevs/solana-wallet-adapter-mui",
+      "main": "lib/index.js",
+      "esnext": "lib/index.js",
+      "types": "lib/index.d.ts",
+      "files": [
+          "lib",
+          "src"
+      ],
+      "publishConfig": {
+          "access": "restricted"
+      },
+      "scripts": {
+          "clean": "shx rm -rf lib/*",
+          "build": "yarn clean && tsc"
+      },
+      "peerDependencies": {
+          "@solana/wallet-adapter-base": "^0.7.0",
+          "@solana/wallet-adapter-react": "^0.13.0",
+          "@solana/wallet-adapter-wallets": "^0.11.0",
+          "@solana/web3.js": "^1.20.0",
+          "react": "^17.0.2",
+          "react-dom": "^17.0.2"
+      },
+      "devDependencies": {
+          "@solana/wallet-adapter-base": "^0.7.0",
+          "@solana/wallet-adapter-react": "^0.13.0",
+          "@solana/wallet-adapter-wallets": "^0.11.0",
+          "@solana/web3.js": "^1.20.0",
+          "@types/react": "^17.0.24",
+          "react": "^17.0.2",
+          "react-dom": "^17.0.2"
+      }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
