@@ -4,7 +4,6 @@ import {
     Collapse,
     Fade,
     ListItemIcon,
-    makeStyles,
     Menu,
     MenuItem,
     Theme,
