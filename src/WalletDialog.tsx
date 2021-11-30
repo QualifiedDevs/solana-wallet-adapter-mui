@@ -11,7 +11,7 @@ import {
     Theme,
 } from '@mui/material';
 
-import { makeStyles } from '@mui/styles';
+import { makeStyles } from '@mui/material/styles';
 
 import { Close, ExpandLess, ExpandMore } from '@mui/icons-material';
 import { useWallet } from '@solana/wallet-adapter-react';
