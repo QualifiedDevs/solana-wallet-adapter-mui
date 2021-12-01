@@ -1,21 +1,34 @@
-import { Theme } from '@mui/material';
-import { makeStyles } from '@mui/material/styles';
-import { Wallet } from '@solana/wallet-adapter-wallets';
-import React, { DetailedHTMLProps, FC, ImgHTMLAttributes } from 'react';
+import { Theme } from "@mui/material";
+// import { makeStyles } from "@mui/material/styles";
+import { Wallet } from "@solana/wallet-adapter-wallets";
+import React, { DetailedHTMLProps, FC, ImgHTMLAttributes } from "react";
 
-const useStyles = makeStyles((theme: Theme) => ({
-    root: {
-        width: theme.spacing(3),
-        height: theme.spacing(3),
-    },
-}));
+// const useStyles = makeStyles((theme: Theme) => ({
+//   root: {
+//     width: theme.spacing(3),
+//     height: theme.spacing(3),
+//   },
+// }));
 
-export interface WalletIconProps extends DetailedHTMLProps<ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement> {
-    wallet: Wallet | null;
+export interface WalletIconProps
+  extends DetailedHTMLProps<
+    ImgHTMLAttributes<HTMLImageElement>,
+    HTMLImageElement
+  > {
+  wallet: Wallet | null;
 }
 
 export const WalletIcon: FC<WalletIconProps> = ({ wallet, ...props }) => {
-    const styles = useStyles();
+  // const styles = useStyles();
 
-    return wallet && <img src={wallet.icon} alt={`${wallet.name} icon`} className={styles.root} {...props} />;
+  return (
+    wallet && (
+      <img
+        src={wallet.icon}
+        alt={`${wallet.name} icon`}
+        // className={styles.root}
+        {...props}
+      />
+    )
+  );
 };

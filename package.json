@@ -18,26 +18,37 @@
         "clean": "shx rm -rf lib/*",
         "build": "yarn clean && tsc"
     },
+
     "peerDependencies": {
         "@mui/icons-material": "^5.2.0",
-        "@mui/material": "^5.2.2",
+        "@mui/material": "latest",
+        "@mui/styled-engine": "npm:@mui/styled-engine-sc@latest",
+        "@mui/styled-engine-sc": "^5.1.0",
         "@solana/wallet-adapter-base": "^0.7.0",
         "@solana/wallet-adapter-react": "^0.13.0",
         "@solana/wallet-adapter-wallets": "^0.11.0",
         "@solana/web3.js": "^1.20.0",
         "react": "^17.0.2",
-        "react-dom": "^17.0.2"
+        "react-dom": "^17.0.2",
+        "styled-components": "latest"
     },
     "devDependencies": {
         "@mui/icons-material": "^5.2.0",
         "@mui/material": "^5.2.2",
-        "@mui/styles": "^5.2.2",
+        "@mui/styled-engine-sc": "^5.1.0",
+        "@mui/styled-engine": "npm:@mui/styled-engine-sc@latest",
         "@solana/wallet-adapter-base": "^0.7.0",
         "@solana/wallet-adapter-react": "^0.13.0",
         "@solana/wallet-adapter-wallets": "^0.11.0",
         "@solana/web3.js": "^1.20.0",
         "@types/react": "^17.0.24",
+        "@types/styled-components": "latest",
+        "babel-plugin-styled-components": "latest",
         "react": "^17.0.2",
-        "react-dom": "^17.0.2"
+        "react-dom": "^17.0.2",
+        "styled-components": "latest"
+    },
+    "resolutions": {
+        "mui/styled-engine": "npm:@mui/styled-engine-sc@latest"
     }
 }
